@@ -3,7 +3,7 @@ import java.io.File;
 import java.io.FileNotFoundException;
 import java.util.ArrayList;
 
-public class FileReader {
+public class Lectura {
     public static void leerArchivo(String data){
         ArrayList<String>  datos = new ArrayList<String>();
         Scanner scan = new Scanner(System.in);
