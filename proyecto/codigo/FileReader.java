@@ -3,6 +3,7 @@ import java.io.File;
 import java.io.FileNotFoundException;
 import java.util.ArrayList;
      /**
+     *@autors Neller Pellegrino , Samuel Meneses , Mauricio Toro
      *the class FileReader is in charge of reading a file
      */
 public class FileReader{
