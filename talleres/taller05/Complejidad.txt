@@ -1,0 +1,2 @@
+La complejidad asintonica para el algoritmo de insertsort seria de O(n^2)
+La complejidad asintonica para el algoritmo de suma de elementos seria de O(n)
