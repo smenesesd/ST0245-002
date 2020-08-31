@@ -1,0 +1,63 @@
+//Array-2 bigDiff
+
+public int bigDiff(int[] nums) {
+    int min = nums[0];
+    int max = nums[0];
+      
+    for(int i = 1; i < nums.length; i++) {
+        min = Math.min(min, nums[i]);
+        max = Math.max(max, nums[i]);
+    }
+                    
+    return max - min;
+}
+
+//countEvens
+public int countEvens(int[] nums) {
+    int count = 0;
+    
+    for(int i = 0; i < nums.length; i++) {
+        if(nums[i] % 2 == 0)
+            count++;
+    }
+                    
+    return count;
+}
+
+//sum28
+public boolean sum28(int[] nums) {
+    int sum = 0;
+    
+    for(int i = 0; i < nums.length; i++) {
+        if(nums[i] == 2)
+            sum += nums[i];
+    }
+                    
+    return sum == 8;
+}
+
+//fizzArray2
+public String[] fizzArray2(int n) {
+    String[] arr = new String[n];
+    
+    for(int i = 0; i < n; i++)
+        arr[i] = String.valueOf(i);
+              
+    return arr;
+}
+
+//more14
+public boolean more14(int[] nums) {
+    int count1 = 0;
+    int count4 = 0;
+      
+    for(int i = 0; i < nums.length; i++) {
+        if(nums[i] == 1)
+            count1++;
+                        
+        if(nums[i] == 4)
+            count4++;
+    }
+                                      
+    return count1 > count4;
+}
