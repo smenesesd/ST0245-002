@@ -1,0 +1,14 @@
+ private static void permutationAux(String respuesta, String pregunta) {
+        if (pregunta.length == 0)
+                    System.out.println(respuesta);
+                else
+                    for (int i = 0; i < pregunta.length; i++)
+                        permutationAux(pregunta.substring(1)//""+pregunta[i],
+                                       pregunta.substring(0,i) + pregunta.substring (i+1));
+                    //las que empiezan por a, las que empiezan las que b, las que empiezan por c
+                    //permutationAux(""+"a", quitarUnaLetra(pregunta, "a") );
+                   // permutationAux(""+"b", quitarUnaLetra(pregunta, "b"));
+                   // permutationAux(""+"c", quitarUnaLetra(pregunta, "c"));
+                   // permutationAux(""+"d", quitarUnaLetra(pregunta, "d"));
+               
+    }
