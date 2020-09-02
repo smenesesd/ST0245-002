@@ -7,11 +7,11 @@ public class Taller3{
 
 
  public static void hanoi(int topN, String a  , String b , String c  ){
-    //""" El caso de Isabel """
+   
     if (topN == 1){
         System.out.println(a + "->" + c);
     }
-    else{ //#El caso de Luis Fernando
+    else{ 
         hanoi(topN-1, a, c, b);
         hanoi(1, a , b, c    );
         hanoi(topN-1, b, a, c);
