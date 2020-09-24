@@ -1,0 +1,42 @@
+import java.util.*;
+public class SolicitudNeveraM {
+    public static void asignarSolicitud(Stack<Nevera> N, Queue<Solicitud> S){
+        for(Solicitud temp: S){
+            int k = temp.getCant();
+            System.out.print(temp.getEmpresa() +" Pidio "+ k +" neveras: "); // numero de neveras
+            for(int i = 0; i < k; i++){
+                if(!N.isEmpty()){
+                    System.out.print(N.pop().toString()+ ", ");
+                }else {
+                    System.out.println("No quedan mas neveras"); //si hay o no hay 
+                    break;
+                }
+            }
+            System.out.println(" ");
+        }
+
+    }
+
+    public static void main(String[] args){
+        Stack<Nevera> N = new Stack<Nevera>();
+        Queue<Solicitud> S = new LinkedList<Solicitud>();
+        N.push(new Nevera("haceb", 8));
+        N.push(new Nevera("lg", 4));
+        N.push(new Nevera("ibm", 4));
+        N.push(new Nevera("haceb", 6));
+        N.push(new Nevera("lg", 4));
+        N.push(new Nevera("ibm", 4));
+        N.push(new Nevera("haceb", 5));
+        N.push(new Nevera("lg", 6));
+        N.push(new Nevera("ibm", 7));
+        N.push(new Nevera("lg", 5));
+        N.push(new Nevera("ibm", 2));
+
+        S.offer(new Solicitud("Exito",1));
+        S.offer(new Solicitud("Olimpica",4));
+        S.offer(new Solicitud("mercapaisa",4));
+        S.offer(new Solicitud("casa",4));
+
+        asignarSolicitud(N, S);              
+    }
+}
