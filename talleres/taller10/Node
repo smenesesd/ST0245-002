@@ -1,0 +1,15 @@
+/**
+ * Class Node
+ * 
+ * @author Samuel Meneses, Neller Pellegrino
+ * @version 15/10/2020
+ */
+public class Node {
+ public Node left;
+ public Node right;
+ public int data;
+ public Node(int d){
+	 
+	data = d;
+ }
+}
