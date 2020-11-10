@@ -31,3 +31,4 @@ public class DigraphAL extends Graph
 
         return n;
     }
+}
