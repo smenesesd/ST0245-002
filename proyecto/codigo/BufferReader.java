@@ -76,7 +76,7 @@ public class BufferReader{
      * Método encargado de almacenar todos los datos a la matriz y llenarla.
      */
     public void leerDatosTest(){
-        Path filePath = Paths.get("lite.csv");
+        Path filePath = Paths.get("0_test_balanced_5000.csv");
         try {
             BufferedReader br = Files.newBufferedReader(filePath);
             String linea;
@@ -97,7 +97,7 @@ public class BufferReader{
      */
     public static int leerCantidadDatosTest(){
         int count = 0;
-        Path filePath = Paths.get("lite.csv");
+        Path filePath = Paths.get("0_test_balanced_5000.csv");
         try {
             BufferedReader br = Files.newBufferedReader(filePath);
             String linea = br.readLine();
